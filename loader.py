@@ -1,9 +1,9 @@
 import os
 
 # Load the secret key from the environment (GitHub Actions will provide this)
-secret_key = os.getenv('MY_SECRET_KEY')
+api_secret = os.getenv('API_SECRET')
 
-if secret_key:
-    print(f'Successfully loaded secret key: {secret_key}')
+if api_secret:
+    print(f'Successfully loaded API secret: {api_secret}')
 else:
-    print('Error: Secret key not found!')
+    print('Error: API secret not found!')
