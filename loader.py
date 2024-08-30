@@ -1,6 +1,6 @@
 import os
 
-# Load the secret key from the environment (GitHub Actions will provide this)
+# Ensure this matches the secret name exactly as used in GitHub
 api_secret = os.getenv('API_SECRET')
 
 if api_secret:
