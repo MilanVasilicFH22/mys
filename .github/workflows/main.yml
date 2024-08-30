@@ -21,6 +21,6 @@ jobs:
 
     - name: Run your script
       env:
-        API_SECRET: ${{ secrets.API_SECRET }}
+        MY_SECRET: ${{ secrets.MY_SECRET }}
       run: |
         python loader.py
