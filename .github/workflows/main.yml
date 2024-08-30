@@ -19,9 +19,6 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: Debug environment variables
-      run: printenv | sort
-
     - name: Run your script
       env:
         API_SECRET: ${{ secrets.API_SECRET }}
