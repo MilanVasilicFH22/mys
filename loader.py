@@ -1,10 +1,6 @@
 import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file if it exists
-load_dotenv()
-
-# Get the secret key from the environment
+# Load the secret key from the environment (GitHub Actions will provide this)
 secret_key = os.getenv('MY_SECRET_KEY')
 
 if secret_key:
